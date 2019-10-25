@@ -6,14 +6,18 @@ This project is a quick and dirty way of creating (svg) pie chart in a web page.
 
 To do so: 
  - add the stylesheet to your page 
-     <link rel="stylesheet" type="text/css" href="css/pie.css" >
+<pre>
+&lt;link rel="stylesheet" type="text/css" href="css/pie.css" &gt; 
+</pre>
 
 
  - declare an element which will act as a container. The width of this element will be use as the diameter of the pie. 
  
 
  - add in this element one or many div following this template: 
-    <div class="pie" style="color:#3366ff;">20</div>
+<pre>
+&lt;div class="pie" style="color:#3366ff;"&gt;20%&lt;/div&gt; 
+</pre>
    The <em>text</em> into the div will be parsed and converted ino the size of the pie part. 
    The <em>color</em> will be set to the pie element. 
 
@@ -23,7 +27,9 @@ To do so:
    Note also that the pie will not set the height of its parent: if you use variable width you have to ensure that the height is also set to (at least) the same value.
 
  - add the js file after the <em>body</em> element:
-    <script src="js/pie.js ">
+<pre>
+&lt;script src="js/pie.js "&gt; 
+</pre>
    you can also add the script in the header and call the function <em>computePie()</em> once the page is loaded
 
 <h4>Exemples</h4>
