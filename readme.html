@@ -1,0 +1,95 @@
+<html>
+
+<head>
+<title>simplePie</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/pie.css" />
+    
+
+</head>
+<body
+style="background-color:#F5F5F5; padding:10px; text-align:center;"
+>
+
+
+
+<div style=" font-size:30px;margin:1em 0 0.5em 0">
+simplePie's 
+</div>
+<div style=" max-width:600px;text-align:left; margin:1em auto 0.5em auto;">
+This project is a quick and dirty way of creating (svg) pie chart in a web page. <br/> <br/>To do so: 
+<ul>
+<li>add the stylesheet to your page <br/>
+&lt;link rel="stylesheet" type="text/css" href="css/pie.css" /&gt;<br/><br/>
+</li>
+<li>declare an element which will act as a container. The width of this element will be use as the diameter of the pie. <br/><br/>
+</li>
+<li>add in this element one or many div following this template: <br/>
+&lt;div class="pie" style="color:#3366ff;"&gt;20%&lt;/div&gt;<br/>
+the text into the div will be parsed and converted ino the size of the pie part. The color will be set to the pie element. <br/><br/>Note that the elements will be stacked (last one on top) each one strating from the top and running clock-wise. So if you want a 20% part followed by a 30% part you need to add a first div with 50% (=20%+30%) then another with 20% (see examples below)<br/><br/>Note also that the pie will not set the height of its parent: if you use variable width you have to ensure that the height is also set to (at least) the same value.<br/><br/>
+</li>
+<li>add the js file after the <em>body</em> element:<br/>
+&lt;script src="js/pie.js "/&gt;<br/>
+you can also add the script in the header and call the function <em>computePie()</em> once the page is loaded
+</li>
+</ul>
+</div>
+<div style=" font-size:30px;margin:1em 0 0.5em 0">
+Exemples
+</div>
+
+<div style=" font-size:22px;margin:1em 0 0.5em 0">
+One element - fix container size:
+</div>
+<div style="display:inline-block; width:200px;height:200px; background-color:#FF0000;">
+    <div class="pie" style="color:#3366ff;">20%</div>
+    
+</div> 
+<div style="display:inline-block; width:200px;height:200px;  background-color:#FF4444;">
+    <div class="pie" style="color:#3366ff;">40%</div>
+    
+</div> 
+<div style="display:inline-block; width:200px;height:200px;  background-color:#FF8888;">
+    <div class="pie" style="color:#3366ff;">60%</div>
+    
+</div> 
+<div style="display:inline-block; width:200px;height:200px;  background-color:#FFCCCC;">
+    <div class="pie" style="color:#3366ff;">80%</div>
+    
+</div> 
+<div style="display:inline-block; width:200px;height:200px;">
+    <div class="pie" style="color:#3366ff;">100%</div>
+    
+</div> 
+
+
+
+
+<div style=" font-size:22px;margin:1em 0 0.5em 0">
+Multiple (stacked) elements:
+</div>
+<div style="display:inline-block; width:200px;height:200px;">
+    <div class="pie" style="color:#669900;">100%</div> <!-- 15% + (40% + 25% + 20%)-->
+    <div class="pie" style="color:#ff6600;">85%</div>  <!-- 20% + (25% + 40,%)-->
+    <div class="pie" style="color:#cc00cc;">65%</div>  <!-- 25% + (40%)-->
+    <div class="pie" style="color:#3366ff;">40%</div>  <!-- 40% (top-most)-->
+</div>
+<br/>
+Code for this exemple:  
+
+<div style=" max-width:600px;text-align:left; margin:1em auto 0.5em auto;">
+&lt;div style="display:inline-block; width:200px;height:200px;"&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pie" style="color:#669900;"&gt;100%&lt;/div&gt; &lt;!-- 15% + (40% + 25% + 20%)--&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pie" style="color:#ff6600;"&gt;85%&lt;/div&gt;  &lt;!-- 20% + (25% + 40,%)--&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pie" style="color:#cc00cc;"&gt;65%&lt;/div&gt;  &lt;!-- 25% + (40%)--&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="pie" style="color:#3366ff;"&gt;40%&lt;/div&gt;  &lt;!-- 40% (top-most)--&gt;<br/>
+&lt;/div&gt;
+</div>
+
+
+</body>
+<script src="js/pie.js "></script>
+
+
+</html>
