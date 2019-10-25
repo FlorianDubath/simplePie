@@ -28,7 +28,7 @@ To do so:
 
 <h4>Exemples</h4>
 
-One element:
+One element (20%, 40%, 60%, 80% and 100% with different background):
 
 
 ![20%, 40%, 60%, 80% and 100% single element chart](https://github.com/FlorianDubath/simplePie/blob/test/images/singleElement.jpg)
