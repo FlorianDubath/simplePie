@@ -33,6 +33,14 @@ One element (20%, 40%, 60%, 80% and 100% with different background):
 
 ![20%, 40%, 60%, 80% and 100% single element chart](https://github.com/FlorianDubath/simplePie/blob/test/images/singleElement.jpg)
 
+Code for the 60% (center) exemple:
+<pre>
+&lt;div style="display:inline-block; width:200px;height:200px; background-color:#FF8888;"&gt;
+    &lt;div class="pie" style="color:#3366ff;">60%&lt;/div&gt;    
+&lt;/div&gt; 
+</pre>
+
+
 
 Multiple (stacked) elements:
 
