@@ -31,12 +31,12 @@ To do so:
 One element:
 
 
-![20%, 40%, 60%, 80% and 100% single element chart](http://url/to/img.png)
+![20%, 40%, 60%, 80% and 100% single element chart](https://github.com/FlorianDubath/simplePie/blob/test/images/singleElement.jpg)
 
 
 Multiple (stacked) elements:
 
-![40%, 25%, 20% and 15% stacked elements chart](http://url/to/img.png)
+![40%, 25%, 20% and 15% stacked elements chart](https://github.com/FlorianDubath/simplePie/blob/test/images/stackedElements.jpg)
 
 
 Code for this exemple:  
