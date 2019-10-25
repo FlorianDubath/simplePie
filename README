@@ -16,7 +16,7 @@ To do so:
    The color will be set to the pie element. 
 
    Note that the elements will be stacked (last one on top) each one strating from the top and running clock-wise. 
-   So if you want a 20% part followed by a 30% part you need to add a first div with 50% (=20%+30%) then another with 20% (see examples below)
+   So if you want a 20% part followed by a 30% part you need to add a first div with 50% (=20%+30%) then another with 20% (see examples)
 
    Note also that the pie will not set the height of its parent: if you use variable width you have to ensure that the height is also set to (at least) the same value.
 
