@@ -37,7 +37,7 @@ To do so:
 One element (20%, 40%, 60%, 80% and 100% with different background):
 
 
-![20%, 40%, 60%, 80% and 100% single element chart](https://github.com/FlorianDubath/simplePie/blob/test/images/singleElement.jpg)
+![20%, 40%, 60%, 80% and 100% single element chart](https://raw.githubusercontent.com/FlorianDubath/simplePie/master/images/singleElement.jpg)
 
 Code for the 60% (center) exemple:
 <pre>
@@ -50,7 +50,7 @@ Code for the 60% (center) exemple:
 
 Multiple (stacked) elements:
 
-![40%, 25%, 20% and 15% stacked elements chart](https://github.com/FlorianDubath/simplePie/blob/test/images/stackedElements.jpg)
+![40%, 25%, 20% and 15% stacked elements chart](https://raw.githubusercontent.com/FlorianDubath/simplePie/master/images/stackedElements.jpg)
 
 
 Code for this exemple:  
